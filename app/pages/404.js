@@ -1,5 +1,4 @@
 import { Heading, Main, Paragraph } from '../components'
-
 import Link from 'next/link'
 
 export default function Custom404() {
