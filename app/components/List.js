@@ -6,7 +6,7 @@ export default function List({ items }) {
     <ul>
       {items.map((item, index) => (
         <li key={index}>
-          <Link href={item.url}>{item.text}</Link>
+          {item.url ? <Link href={item.url}>{item.text}</Link> : item.text}
         </li>
       ))}
     </ul>
