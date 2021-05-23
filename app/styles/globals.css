@@ -23,6 +23,13 @@ a:hover {
   box-sizing: border-box;
 }
 
+code {
+  background: #d4d4ff;
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding: 0 5px 2px;
+}
+
 main,
 nav {
   margin: 1rem auto;
