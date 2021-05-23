@@ -13,7 +13,6 @@ export default function Home() {
       <List
         items={[
           { url: '/ecma-2015', text: 'What is ES6 or ECMAScript 2015?' },
-          { url: '/features', text: 'What did ES6 introduce?' },
           { url: '/let-and-const', text: 'What is let and const?' },
           { url: '/arrow-functions', text: 'What are arrow functions?' },
           { url: '/spread-operator', text: 'What is the spead operator?' },
