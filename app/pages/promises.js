@@ -12,6 +12,11 @@ export default function Promises() {
           <Code>{`const promise = new Promise((resolve, reject) => { resolve('something') })`}</Code>
         </Paragraph>
         <Paragraph>
+          This asynchronous programming includes running of processes
+          individually from the main thread, and it notifies the main thread
+          when it gets complete.
+        </Paragraph>
+        <Paragraph>
           Promises can have one of three values; <Code>pending</Code>,{' '}
           <Code>fulfilled</Code> or <Code>rejected</Code>.{' '}
           <Code>promise.then()</Code>,<Code>promise.catch()</Code>, and{' '}
