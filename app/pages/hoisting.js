@@ -1,11 +1,18 @@
-import { Heading, Main, Paragraph, Section } from '../components'
+import { Code, Heading, Main, Paragraph, Section } from '../components'
 
 export default function Hoisting() {
   return (
     <Main>
       <Heading>What is Hoisting?</Heading>
       <Section>
-        <Paragraph>Hoisting in ES6</Paragraph>
+        <Paragraph>
+          Hoisting is the default behaviour of moving declarations (Functions
+          and Variables) to the top of the current scope, whether it's the
+          script or a function. Variables using <Code>let</Code> or{' '}
+          <Code>const</Code> are hoisted to top of the block, but they aren't
+          initialized; so the block of code is aware of these variables, but
+          they can't be used until they are declared.
+        </Paragraph>
       </Section>
     </Main>
   )
