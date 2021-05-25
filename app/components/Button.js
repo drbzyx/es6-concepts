@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types'
 
-export default function Button({ changeHandler, children }) {
-  return <button onClick={changeHandler}>{children}</button>
+export default function Button({ handler, children }) {
+  return <button onClick={handler}>{children}</button>
 }
 
 Button.propTypes = {
-  changeHandler: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  handler: PropTypes.func.isRequired,
 }
