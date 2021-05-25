@@ -16,7 +16,8 @@ export default function Maps() {
         <Paragraph>
           Adding values is done using{' '}
           <Code>{`sandwiches.set('Ham', { bread: 'Brown', butter: true })`}</Code>
-          .
+          . Using <Code>set</Code> on a key which already exists overwrites the
+          value but not its insertion order.
         </Paragraph>
         <Paragraph>
           We can fetch specific values if we know the key doing{' '}
