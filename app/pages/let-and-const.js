@@ -12,15 +12,19 @@ export default function LetAndConst() {
     <Main>
       <Heading>What is let and const?</Heading>
       <Section>
-        <Subheading>Let</Subheading>
+        <Subheading>
+          The mutable <Code>let</Code>
+        </Subheading>
         <Paragraph>
           As it was introduced, <Code>let</Code> was the new <Code>var</Code>.
-          It's the keyword which allows you to declare a variable with block
-          scope.
+          It is similar to the <Code>var</Code> keyword except it provides block
+          scoping.
         </Paragraph>
       </Section>
       <Section>
-        <Subheading>Const</Subheading>
+        <Subheading>
+          The immutable <Code>const</Code>
+        </Subheading>
         <Paragraph>
           The <Code>const</Code> keyword is similar to let, it's block scoped
           too. Except it's used for values which can't be changed.
