@@ -14,7 +14,7 @@ export default function Callbacks() {
           Callbacks are functions passed as an argument to another function...
           which is then called. A pretty good example of callback usage would be
           those called by events in React{' '}
-          <Code>{`<Button changeHandler={handleClick}>Clicked {count} times</Button>`}</Code>
+          <Code>{`<Button handler={handleClick}>Clicked {count} times</Button>`}</Code>
         </Paragraph>
         <Button handler={handleClick}>Clicked {count} times</Button>
         <Paragraph>
