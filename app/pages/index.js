@@ -26,7 +26,6 @@ export default function Home() {
           { url: '/generators', text: 'What are generator functions?' },
           { url: '/loops', text: 'What are the ES6 loops?' },
           { url: '/maps', text: 'What are maps?' },
-          { url: '/weak-things', text: 'What are weaksets and weakmaps?' },
           { url: '/promises', text: 'What are promises?' },
           { url: '/callbacks', text: 'What are callbacks?' },
           { url: '/modules', text: 'What are modules?' },
