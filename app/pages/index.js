@@ -25,7 +25,7 @@ export default function Home() {
           { url: '/classes', text: 'What are classes?' },
           { url: '/generators', text: 'What are generator functions?' },
           { url: '/loops', text: 'What are the ES6 loops?' },
-          { url: '/maps', text: 'What are maps?' },
+          { url: '/collections', text: 'What are the new collections?' },
           { url: '/promises', text: 'What are promises?' },
           { url: '/callbacks', text: 'What are callbacks?' },
           { url: '/modules', text: 'What are modules?' },
