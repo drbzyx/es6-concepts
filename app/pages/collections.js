@@ -45,7 +45,7 @@ export default function Maps() {
         </Paragraph>
       </Section>
       <Section>
-        <Subheading>WeakMaps</Subheading>
+        <Subheading>WeakMaps (New with ES6)</Subheading>
         <Paragraph>
           A <Code>WeakMap</Code> is basically just a <Code>Map</Code> except it
           has a few differences. The <Code>key</Code> must be an object. The{' '}
@@ -61,7 +61,7 @@ export default function Maps() {
         </Paragraph>
         <Paragraph>
           In examples I have seen, if reference to the original object is
-          destroyed, the value of the <Code>WeakSey</Code> with that key will
+          destroyed, the value of the <Code>WeakSet</Code> with that key will
           also be removed and garbage collected: For example;{' '}
           <Link href='https://javascript.plainenglish.io/weakmaps-illustrated-8169ce4764bb'>
             this example
@@ -88,7 +88,7 @@ export default function Maps() {
         </Paragraph>
       </Section>
       <Section>
-        <Subheading>WeakSets</Subheading>
+        <Subheading>WeakSets (New with ES6)</Subheading>
         <Paragraph>
           Similar to the <Code>WeakMap</Code> discussion above, here we follow a
           similar pattern. We may only add objects, an object may exist in the{' '}
