@@ -17,7 +17,7 @@ export default function ArrowFunctions() {
         </Paragraph>
         <Paragraph>
           Due to the fact this is a one liner, you could ditch the{' '}
-          <Code>{`{}`}</Code> like:{' '}
+          <Code>{`{ ... }`}</Code> like:{' '}
           <Code>{`const returnArgs = (...args) => args`}</Code>
         </Paragraph>
         <Paragraph>

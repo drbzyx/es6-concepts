@@ -90,7 +90,7 @@ export default function Maps() {
       <Section>
         <Subheading>WeakSets (New with ES6)</Subheading>
         <Paragraph>
-          Similar to the <Code>WeakMap</Code> discussion above, here we follow a
+          As with the <Code>WeakMap</Code> discussion above, here we follow a
           similar pattern. We may only add objects, an object may exist in the{' '}
           <Code>WeakSet</Code> if it's reachable from somewhere else, and it
           only supports <Code>add</Code>, <Code>has</Code>, <Code>delete</Code>;

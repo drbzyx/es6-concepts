@@ -6,9 +6,9 @@ export default function Promises() {
       <Heading>What are Promises?</Heading>
       <Section>
         <Paragraph>
-          A Promise is an object which representations the eventual completion
-          or failure of an asynchronous operation and its returned value. You
-          can create promises by doing:{' '}
+          A Promise is an object which represents the eventual completion or
+          failure of an asynchronous operation and its returned value. You can
+          create promises by doing:{' '}
           <Code>{`const promise = new Promise((resolve, reject) => { resolve('something') })`}</Code>
         </Paragraph>
         <Paragraph>

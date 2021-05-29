@@ -11,7 +11,7 @@ export default function Hoisting() {
           script or a function. Variables using <Code>let</Code> or{' '}
           <Code>const</Code> are hoisted to top of the block, but they aren't
           initialized; so the block of code is aware of these variables, but
-          they can't be used until they are declared.
+          they can't be used until they are declared. Classes aren't hoisted.
         </Paragraph>
       </Section>
     </Main>

@@ -11,9 +11,11 @@ export default function Ecma() {
   const items = [
     { text: 'Arrow functions' },
     { text: 'Destructuring' },
-    { text: 'Generators and iterators' },
+    { text: 'Generator functions' },
+    { text: 'Iterators' },
     { text: 'Let and const keywords' },
-    { text: 'Modules and classes' },
+    { text: 'Modules' },
+    { text: 'Revamped Classes' },
     { text: 'Object literals' },
     { text: 'Promises' },
     { text: 'Rest and spread operators' },
@@ -27,7 +29,7 @@ export default function Ecma() {
         <Subheading>Well, what is it?</Subheading>
         <Paragraph>
           ECMAScript is a JavaScript standard meant to ensure interoperability
-          between browsers.ES6 was the second major revision of JavaScript
+          between browsers. ES6 was the second major revision of JavaScript
           released in 2015.
         </Paragraph>
         <Paragraph>

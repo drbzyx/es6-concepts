@@ -12,9 +12,9 @@ export default function Generators() {
           <Code>{'function* generateSomething() { ... }'}</Code>.
         </Paragraph>
         <Paragraph>
-          The keyword <Code>yield 'randomValue'</Code> is used to suspend the
-          function and return the value to the caller. Calling the function
-          again would resume from after that statement.
+          The keyword <Code>yield</Code> is used to suspend the function and
+          return a value. Calling the function again would resume from after
+          that statement.
         </Paragraph>
         <Paragraph>
           The <Code>next()</Code> method is the main method of these generators.
