@@ -19,13 +19,13 @@ export default function Promises() {
         <Paragraph>
           Promises can have one of three values; <Code>pending</Code>,{' '}
           <Code>fulfilled</Code> or <Code>rejected</Code>.{' '}
-          <Code>promise.then()</Code>,<Code>promise.catch()</Code>, and{' '}
+          <Code>promise.then()</Code>, <Code>promise.catch()</Code>, and{' '}
           <Code>promise.finally()</Code> are used to chain further action with a
           promise.
         </Paragraph>
         <Paragraph>
-          You can <Code>await</Code>a promise like so:{' '}
-          <Code>const value = await promise</Code> when wrapped in a{' '}
+          You can <Code>await</Code> a promise like so:{' '}
+          <Code>const value = await promise</Code> when wrapped in an{' '}
           <Code>async</Code> function.
         </Paragraph>
       </Section>
