@@ -1,12 +1,7 @@
-import Link from 'next/link'
 import PropTypes from 'prop-types'
 
 export default function Heading({ children }) {
-  return (
-    <h1>
-      <Link href='/'>Index</Link> {children}
-    </h1>
-  )
+  return <h1>{children}</h1>
 }
 
 Heading.propTypes = {
