@@ -50,7 +50,7 @@ export default function MenuMobile({ items }) {
       <div className="bg-green-800 text-gray-100 flex justify-between md:hidden">
         <Link href="/">
           <a className="block p-4 text-white font-bold">
-            <span className="text-2xl font-bold">React Concepts</span>
+            <span className="text-2xl font-bold">ES6 Concepts</span>
           </a>
         </Link>
         <button
