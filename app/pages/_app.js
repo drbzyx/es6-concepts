@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import { MenuNavigation } from '../components'
+import { AnimatePresence } from 'framer-motion'
 
 const items = [
   { url: '/ecma-2015', text: 'What is ES6 or ECMAScript 2015?' },
@@ -27,9 +28,15 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className="min-h-screen md:flex">
       <MenuNavigation items={items} />
-        <div className="flex-1 p-10 text-xl md:mr-20">
-          <Component {...pageProps} />
-        </div>
+        <AnimatePresence
+          exitBeforeEnter
+          initial={false}
+          onExitComplete={() => window.scrollTo(0, 0)}
+        >
+          <div className="flex-1 p-10 text-xl md:mr-20">
+            <Component {...pageProps} />
+          </div>
+        </AnimatePresence>
     </div>
   )
 }
