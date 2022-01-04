@@ -1,4 +1,4 @@
-import { Heading, List, Main, Paragraph } from '../components'
+import { Heading, Main, Paragraph } from '../components'
 
 export default function Home() {
   return (
