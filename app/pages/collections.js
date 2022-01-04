@@ -63,11 +63,11 @@ export default function Maps() {
           In examples I have seen, if reference to the original object is
           destroyed, the value of the <Code>WeakSet</Code> with that key will
           also be removed and garbage collected: For example;{' '}
-          <Link href='https://javascript.plainenglish.io/weakmaps-illustrated-8169ce4764bb'>
+          <Link href="https://javascript.plainenglish.io/weakmaps-illustrated-8169ce4764bb">
             this example
           </Link>{' '}
           and{' '}
-          <Link href='https://javascript.info/weakmap-weakset#weakmap'>
+          <Link href="https://javascript.info/weakmap-weakset#weakmap">
             this one (which is better)
           </Link>
           .
