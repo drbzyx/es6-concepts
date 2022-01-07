@@ -1,5 +1,6 @@
 import Button from './Button'
 import Code from './Code'
+import CodeSnippit from './CodeSnippit'
 import Heading from './Heading'
 import Input from './Input'
 import Label from './Label'
@@ -16,6 +17,7 @@ import Subheading from './Subheading'
 export {
   Button,
   Code,
+  CodeSnippit,
   Heading,
   Input,
   Label,
