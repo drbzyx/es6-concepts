@@ -14,11 +14,11 @@ export default function TemplateLiterals() {
           him in some strings. The "old" way could have been something like
           this:{' '}
           <CodeSnippit
-            code={`const string = 'My name is ' + name + ', nice to see you.'`}
+            code={`const string = 'My name is ' + name + ', nice to meet you.'`}
           />{' '}
           but now we can do{' '}
           <CodeSnippit
-            code={'const template = `My name is ${name}, nice to see you.`'}
+            code={'const template = `My name is ${name}, nice to meet you.`'}
           />
           .
         </Paragraph>
