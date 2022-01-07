@@ -8,7 +8,7 @@ export default function CodeSnippit({
   wrapLongLines,
 }) {
   return (
-    <span className="block my-4">
+    <span>
       <Code
         language={language}
         showLineNumbers={showLineNumbers}
