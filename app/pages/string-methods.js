@@ -1,4 +1,4 @@
-import { Code, Heading, Main, Paragraph, Section } from '../components'
+import { CodeSnippit, Heading, Main, Paragraph, Section } from '../components'
 
 export default function StringMethods() {
   return (
@@ -7,8 +7,10 @@ export default function StringMethods() {
       <Section>
         <Paragraph>
           Strings have plenty of methods, but ES6 introduced four new ones;{' '}
-          <Code>startsWith(string)</Code>, <Code>endsWith(string)</Code>,{' '}
-          <Code>includes(string)</Code> and <Code>repeat(int)</Code>.
+          <CodeSnippit code="startsWith(string)" />,{' '}
+          <CodeSnippit code="endsWith(string)" />,{' '}
+          <CodeSnippit code="includes(string)" /> and{' '}
+          <CodeSnippit code="repeat(int)" />.
         </Paragraph>
       </Section>
     </Main>
