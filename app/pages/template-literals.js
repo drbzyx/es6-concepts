@@ -20,6 +20,7 @@ export default function TemplateLiterals() {
           <CodeSnippit
             code={'const template = `My name is ${name}, nice to see you.`'}
           />
+          .
         </Paragraph>
       </Section>
     </Main>
