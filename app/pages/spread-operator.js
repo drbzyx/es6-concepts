@@ -1,10 +1,10 @@
-import { Code, Heading, Main, Paragraph, Section } from '../components'
+import { CodeSnippit, Heading, Main, Paragraph, Section } from '../components'
 
 export default function SpreadOperator() {
   return (
     <Main>
       <Heading>
-        What is the spead operator? <Code>(...)</Code>
+        What is the spead operator? <CodeSnippit code="(...)" />
       </Heading>
       <Section>
         <Paragraph>
@@ -16,24 +16,27 @@ export default function SpreadOperator() {
           state and props.
         </Paragraph>
         <Paragraph>
-          For these examples lets assume we have an array
-          <Code>const array = [1, 2, 3]</Code> and an object{' '}
-          <Code>{`const object = { name: 'Bob', age: '35' }`}</Code>.
+          For these examples lets assume we have an array{' '}
+          <CodeSnippit code="const array = [1, 2, 3]" /> and an object{' '}
+          <CodeSnippit code={`const object = { name: 'Bob', age: '35' }`} />.
         </Paragraph>
         <Paragraph>
-          Copying arrays: <Code>const copiedArray = [...array]</Code>
+          Copying arrays: <CodeSnippit code="const copiedArray = [...array]" />
         </Paragraph>
         <Paragraph>
-          Merging arrays: <Code>const combinedArray = [4, 5, ...array, 6]</Code>
+          Merging arrays:{' '}
+          <CodeSnippit code="const combinedArray = [4, 5, ...array, 6]" />
         </Paragraph>
         <Paragraph>
           Merging objects:{' '}
-          <Code>{`const combinedObject = { ...object, hobby: 'Fishing' }`}</Code>
+          <CodeSnippit
+            code={`const combinedObject = { ...object, hobby: 'Fishing' }`}
+          />
         </Paragraph>
         <Paragraph>
           Using an array as an argument:{' '}
-          <Code>{`const add = (a, b, c) => a + b + c`}</Code> with{' '}
-          <Code>const values = add(...array)</Code>
+          <CodeSnippit code={`const add = (a, b, c) => a + b + c`} /> with{' '}
+          <CodeSnippit code="const values = add(...array)" />
         </Paragraph>
       </Section>
     </Main>
