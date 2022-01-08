@@ -1,4 +1,4 @@
-import { Code, Heading, Main, Paragraph, Section } from '../components'
+import { CodeSnippit, Heading, Main, Paragraph, Section } from '../components'
 
 export default function TemplateLiterals() {
   return (
@@ -10,15 +10,17 @@ export default function TemplateLiterals() {
           interopolation. This makes strings a lot easier and prettier.
         </Paragraph>
         <Paragraph>
-          For example lets take the <Code>name</Code> 'Dan' and throw him in
-          some strings. The "old" way could have been something like this:{' '}
-          <Code>
-            const string = 'My name is ' + name + ', nice to see you.'
-          </Code>{' '}
+          For example lets take the <CodeSnippit code="name" /> 'Dan' and throw
+          him in some strings. The "old" way could have been something like
+          this:{' '}
+          <CodeSnippit
+            code={`const string = 'My name is ' + name + ', nice to meet you.'`}
+          />{' '}
           but now we can do{' '}
-          <Code>
-            {'const template = `My name is ${name}, nice to see you.`'}
-          </Code>
+          <CodeSnippit
+            code={'const template = `My name is ${name}, nice to meet you.`'}
+          />
+          .
         </Paragraph>
       </Section>
     </Main>

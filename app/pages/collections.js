@@ -1,5 +1,5 @@
 import {
-  Code,
+  CodeSnippit,
   Heading,
   Main,
   Paragraph,
@@ -19,50 +19,57 @@ export default function Maps() {
           remember the original insertion order of the keys.
         </Paragraph>
         <Paragraph>
-          We can check the size of our <Code>const sandwiches = new Map()</Code>{' '}
-          by doing <Code>sandwiches.size</Code>.
+          We can check the size of our{' '}
+          <CodeSnippit code="const sandwiches = new Map()" /> by doing{' '}
+          <CodeSnippit code="sandwiches.size" />.
         </Paragraph>
         <Paragraph>
           Adding values is done using{' '}
-          <Code>{`sandwiches.set('Ham', { bread: 'Brown', butter: true })`}</Code>
-          . Using <Code>set</Code> on a key which already exists overwrites the
-          value but not its insertion order.
+          <CodeSnippit
+            code={`sandwiches.set('Ham', { bread: 'Brown', butter: true })`}
+          />
+          . Using <CodeSnippit code="set" /> on a key which already exists
+          overwrites the value but not its insertion order.
         </Paragraph>
         <Paragraph>
           We can fetch specific values if we know the key doing{' '}
-          <Code>sandwiches.get('key')</Code>, and if we wanted to check first we
-          can do <Code>sandwiches.has('key')</Code> because otherwise we may get{' '}
-          <Code>undefined</Code>.
+          <CodeSnippit code="sandwiches.get('key')" />, and if we wanted to
+          check first we can do <CodeSnippit code="sandwiches.has('key')" />{' '}
+          because otherwise we may get <CodeSnippit code="undefined" />.
         </Paragraph>
         <Paragraph>
           We can also delete map entries using{' '}
-          <Code>sandwiches.delete('key')</Code> which returns a boolean based on
-          the result of the delete.
+          <CodeSnippit code="sandwiches.delete('key')" /> which returns a
+          boolean based on the result of the delete.
         </Paragraph>
         <Paragraph>
           Maps can be iterated using{' '}
-          <Code>{'for (const value of sandwiches) { ... }'}</Code>
+          <CodeSnippit code={'for (const value of sandwiches) { ... }'} />
         </Paragraph>
       </Section>
       <Section>
         <Subheading>WeakMaps (New with ES6)</Subheading>
         <Paragraph>
-          A <Code>WeakMap</Code> is basically just a <Code>Map</Code> except it
-          has a few differences. The <Code>key</Code> must be an object. The{' '}
-          <Code>key</Code> is weakly referenced. A <Code>WeakMap</Code> is a
-          black box; there's no way retrieve the list of keys or see its size.
-          You cannot loop over these with <Code>for...of</Code> either. The{' '}
-          <Code>value</Code> is accessible using the <Code>key</Code> reference.
+          A <CodeSnippit code="WeakMap" /> is basically just a{' '}
+          <CodeSnippit code="Map" /> except it has a few differences. The{' '}
+          <CodeSnippit code="key" /> must be an object. The{' '}
+          <CodeSnippit code="key" /> is weakly referenced. A{' '}
+          <CodeSnippit code="WeakMap" /> is a black box; there's no way retrieve
+          the list of keys or see its size. You cannot loop over these with{' '}
+          <CodeSnippit code="for...of" /> either. The{' '}
+          <CodeSnippit code="value" /> is accessible using the{' '}
+          <CodeSnippit code="key" /> reference.
         </Paragraph>
         <Paragraph>
-          There are only 4 methods: <Code>get(key)</Code>,{' '}
-          <Code>set(key, value)</Code>, <Code>delete(key)</Code> and{' '}
-          <Code>has(key)</Code>.
+          There are only 4 methods: <CodeSnippit code="get(key)" />,{' '}
+          <CodeSnippit code="set(key, value)" />,{' '}
+          <CodeSnippit code="delete(key)" /> and <CodeSnippit code="has(key)" />
+          .
         </Paragraph>
         <Paragraph>
           In examples I have seen, if reference to the original object is
-          destroyed, the value of the <Code>WeakSet</Code> with that key will
-          also be removed and garbage collected: For example;{' '}
+          destroyed, the value of the <CodeSnippit code="WeakSet" /> with that
+          key will also be removed and garbage collected: For example;{' '}
           <Link href="https://javascript.plainenglish.io/weakmaps-illustrated-8169ce4764bb">
             this example
           </Link>{' '}
@@ -76,26 +83,29 @@ export default function Maps() {
       <Section>
         <Subheading>Sets</Subheading>
         <Paragraph>
-          A <Code>Set</Code> is a collection of unique values. They can be
-          iterated through in the order they were inserted. Sets can be iterated
-          using <Code>{'for (const value of set) { ... }'}</Code>.
+          A <CodeSnippit code="Set" /> is a collection of unique values. They
+          can be iterated through in the order they were inserted. Sets can be
+          iterated using{' '}
+          <CodeSnippit code={'for (const value of set) { ... }'} />.
         </Paragraph>
         <Paragraph>
-          <Code>Map</Code> and <Code>Set</Code> share the same methods:{' '}
-          <Code>set.add(value)</Code>,<Code>set.has(value)</Code>,{' '}
-          <Code>set.delete(value)</Code>, <Code>set.size</Code> and they can be
-          iterated.
+          <CodeSnippit code="Map" /> and <CodeSnippit code="Set" /> share the
+          same methods: <CodeSnippit code="set.add(value)" />,
+          <CodeSnippit code="set.has(value)" />,{' '}
+          <CodeSnippit code="set.delete(value)" />,{' '}
+          <CodeSnippit code="set.size" /> and they can be iterated.
         </Paragraph>
       </Section>
       <Section>
         <Subheading>WeakSets (New with ES6)</Subheading>
         <Paragraph>
-          As with the <Code>WeakMap</Code> discussion above, here we follow a
-          similar pattern. We may only add objects, an object may exist in the{' '}
-          <Code>WeakSet</Code> if it's reachable from somewhere else, and it
-          only supports <Code>add</Code>, <Code>has</Code>, <Code>delete</Code>;
-          it doesn't have any iterators or have <Code>values()</Code> or{' '}
-          <Code>keys()</Code>.
+          As with the <CodeSnippit code="WeakMap" /> discussion above, here we
+          follow a similar pattern. We may only add objects, an object may exist
+          in the <CodeSnippit code="WeakSet" /> if it's reachable from somewhere
+          else, and it only supports <CodeSnippit code="add" />,{' '}
+          <CodeSnippit code="has" />, <CodeSnippit code="delete" />; it doesn't
+          have any iterators or have <CodeSnippit code="values()" /> or{' '}
+          <CodeSnippit code="keys()" />.
         </Paragraph>
       </Section>
     </Main>
