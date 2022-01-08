@@ -1,4 +1,4 @@
-import { Code, Heading, Main, Paragraph, Section } from '../components'
+import { CodeSnippit, Heading, Main, Paragraph, Section } from '../components'
 
 export default function Classes() {
   return (
@@ -7,10 +7,10 @@ export default function Classes() {
       <Section>
         <Paragraph>
           Classes are a template for creating objects. These are made with a{' '}
-          <Code>constructor</Code> and are encapsulated. Class declarations are
-          not hoisted, you might get a <Code>ReferenceError</Code>! I haven't
-          really felt the need to use these often since React moved away from
-          them.
+          <CodeSnippit code="constructor" /> and are encapsulated. Class
+          declarations are not hoisted, you might get a{' '}
+          <CodeSnippit code="ReferenceError" />! I haven't really felt the need
+          to use these often since React moved away from them.
         </Paragraph>
         <Paragraph>
           Functions of a class are used to perform actions of that specific
