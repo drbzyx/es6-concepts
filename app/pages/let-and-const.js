@@ -1,5 +1,5 @@
 import {
-  Code,
+  CodeSnippit,
   Heading,
   Main,
   Paragraph,
@@ -13,21 +13,22 @@ export default function LetAndConst() {
       <Heading>What is let and const?</Heading>
       <Section>
         <Subheading>
-          The mutable <Code>let</Code>
+          The mutable <CodeSnippit code="let" />
         </Subheading>
         <Paragraph>
-          As it was introduced, <Code>let</Code> was the new <Code>var</Code>.
-          It is similar to the <Code>var</Code> keyword except it provides block
-          scoping.
+          As it was introduced, <CodeSnippit code="let" /> was the new{' '}
+          <CodeSnippit code="var" />. It is similar to the{' '}
+          <CodeSnippit code="var" /> keyword except it provides block scoping.
         </Paragraph>
       </Section>
       <Section>
         <Subheading>
-          The immutable <Code>const</Code>
+          The immutable <CodeSnippit code="const" />
         </Subheading>
         <Paragraph>
-          The <Code>const</Code> keyword is similar to let, it's block scoped
-          too. Except it's used for values which can't be changed.
+          The <CodeSnippit code="const" /> keyword is similar to{' '}
+          <CodeSnippit code="let" />, it's block scoped too. Except it's used
+          for values which can't be changed; hence immutable.
         </Paragraph>
       </Section>
     </Main>
