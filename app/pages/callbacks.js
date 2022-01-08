@@ -1,5 +1,12 @@
 import { useState } from 'react'
-import { Button, Code, Heading, Main, Paragraph, Section } from '../components'
+import {
+  Button,
+  CodeSnippit,
+  Heading,
+  Main,
+  Paragraph,
+  Section,
+} from '../components'
 
 export default function Callbacks() {
   const [count, setCount] = useState(0)
@@ -13,8 +20,11 @@ export default function Callbacks() {
         <Paragraph>
           Callbacks are functions passed as an argument to another function...
           which is then called. A pretty good example of callback usage would be
-          those called by events in React{' '}
-          <Code>{`<Button handler={handleClick}>Clicked {count} times</Button>`}</Code>
+          those called by events in React for example:{' '}
+          <CodeSnippit
+            code={`<Button handler={handleClick}>Clicked {count} times</Button>`}
+          />
+          .
         </Paragraph>
         <Button handler={handleClick}>Clicked {count} times</Button>
         <Paragraph>
