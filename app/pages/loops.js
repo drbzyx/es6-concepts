@@ -1,5 +1,4 @@
 import {
-  Code,
   CodeSnippit,
   Heading,
   Main,
@@ -35,8 +34,8 @@ export default function Loops() {
           <CodeSnippit
             code={`for (const key in primes) { console.log(key) }`}
           />{' '}
-          and note that these are of type <Code>string</Code>. But we can also
-          get the values of objects this way by doing:{' '}
+          and note that these are of type <CodeSnippit code="string" />. But we
+          can also get the values of objects this way by doing:{' '}
           <CodeSnippit
             code={`for (const key in object) { console.log(object[key]) }`}
           />
